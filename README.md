@@ -40,6 +40,13 @@
 *回合头：本插件在官方「已完成 …」那一行**上方**加一行「[头像] 配置名」，官方那一行原样保留。*
 *The turn head: this plugin adds an "[avatar] profile name" line **above** the stock "completed …" row, leaving that row untouched.*
 
+### 长期记忆条目
+
+![长期记忆](docs/memory-settings.png)
+
+*长期记忆：逐条编辑**长期记忆条目**（每条自带「编辑 / 删除」），下方实时显示「长期记忆占用 746 / 5000 字；超过上限会自动提炼压缩」。*
+*Long-term memory: edit the **long-term memory entries** one by one (each with its own edit / delete), with a live "long-term memory uses 746 / 5000 characters; past the cap it is condensed automatically" readout below.*
+
 > 截图为**中文界面**下的实测界面（设置 UI 跟随宿主语言，内置中英两套词典）。
 > The screenshots show the UI in Chinese (the settings UI follows the host language; both dictionaries ship built in).
 
