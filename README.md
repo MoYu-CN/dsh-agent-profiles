@@ -17,6 +17,32 @@
 
 无论哪一层，切换都是**立即生效且只影响之后的对话**，历史记录一个字都不动。
 
+## 界面
+
+### 设置 →「智能体配置」
+
+![设置页](docs/settings-page.png)
+
+*设置页：左栏配置列表（新建 / 复制 / 导入 / 导出），右栏编辑名称、头像与角色设定。*
+*The settings page: the profile list on the left, and the name / avatar / role fields on the right.*
+
+### 输入框左侧的快速切换器
+
+![快速切换器](docs/quick-switcher.png)
+
+*快速切换器：给**这个对话**挑一套配置 ——「跟随全局」表示用设置页里当前那一套。*
+*The quick switcher: pick a profile for **this conversation**; "follow global" means the active profile from the settings page.*
+
+### 回合头的头像与名称
+
+![回合头](docs/message-header.png)
+
+*回合头：本插件在官方「已完成 …」那一行**上方**加一行「[头像] 配置名」，官方那一行原样保留。*
+*The turn head: this plugin adds an "[avatar] profile name" line **above** the stock "completed …" row, leaving that row untouched.*
+
+> 截图为**中文界面**下的实测界面（设置 UI 跟随宿主语言，内置中英两套词典）。
+> The screenshots show the UI in Chinese (the settings UI follows the host language; both dictionaries ship built in).
+
 ---
 
 ## 1. 整体结构与模块划分
