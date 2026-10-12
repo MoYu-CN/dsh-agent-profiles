@@ -1,0 +1,4 @@
+- insert:
+    - id: agent-profiles
+      name: dsh-agent-profiles
+      inject: [webServer]

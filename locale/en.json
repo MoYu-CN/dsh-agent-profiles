@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Profiles",
+    "description": "Create multiple agent profiles (role, personality, speaking style, ground rules, long-term memory) and choose which one is active; includes a memory-injection toggle, import/export and restore-defaults."
+  }
+}

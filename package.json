@@ -1,0 +1,73 @@
+{
+  "name": "dsh-agent-profiles",
+  "version": "0.7.0",
+  "description": "Multiple AI agent profiles — role, avatar, personality, speaking style, ground rules and long-term memory — assignable per conversation, with a memory-injection toggle, import/export and restore-defaults.",
+  "type": "module",
+  "icon": "./icon.svg",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/store.js",
+    "lib/prompt.js",
+    "lib/routes.js",
+    "lib/memory.js",
+    "lib/client.js",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "meta": {
+    "title": {
+      "zh": "智能体配置",
+      "en": "Agent Profiles"
+    },
+    "description": {
+      "zh": "建多套智能体配置（角色/性格/说话习惯/行为准则/长期记忆）并指定当前启用的一套；支持记忆注入开关、导入导出与恢复默认。",
+      "en": "Create multiple agent profiles (role, personality, speaking style, ground rules, long-term memory) and choose which one is active; includes a memory-injection toggle, import/export and restore-defaults."
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-profile",
+    "persona",
+    "memory",
+    "role-play",
+    "system-prompt",
+    "cordis-plugin"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoYu-CN/dsh-agent-profiles.git"
+  }
+}
