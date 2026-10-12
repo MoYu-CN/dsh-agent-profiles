@@ -1,6 +1,7 @@
 {
   "name": "dsh-agent-profiles",
   "version": "0.7.0",
+  "author": "MoYu-CN",
   "description": "Multiple AI agent profiles — role, avatar, personality, speaking style, ground rules and long-term memory — assignable per conversation, with a memory-injection toggle, import/export and restore-defaults.",
   "type": "module",
   "icon": "./icon.svg",
