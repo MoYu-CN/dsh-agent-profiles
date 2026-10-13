@@ -1,7 +1,7 @@
 # dsh-agent-profiles —— 智能体配置
 
 > **English summary** — Multiple AI agent profiles for DSH (DeepSeek Harness): role, avatar, personality, speaking style, ground rules and long-term memory — one global default, plus a per-conversation override with its own instructions and memory.
-> **Install:** reference this folder from your DSH profile (`"dsh-agent-profiles": "link:<your dir>/dsh-agent-profiles"`), then restart DSH for the host half and reload the page for the client half.
+> **Install:** `dsh plugin add dsh-agent-profiles` (recommended, from npm). The tarball and from-source alternatives are in the 安装 / Install section below. Then restart DSH for the host half and reload the page for the client half.
 > **Highlights:** choose the active profile, pin a profile per conversation, memory-injection toggle, import / export, restore defaults.
 > **Language:** the settings UI follows the host language setting — Chinese and English dictionaries are both built in. **Model-facing prompts stay in Chinese** by design.
 > **License:** MIT.
@@ -16,6 +16,35 @@
 | **每个对话的配置** | 输入框左侧下拉 + ⚙ 面板 | 只影响这一个对话；可固定某套配置，还能写**本对话专属**的补充设定与记忆 |
 
 无论哪一层，切换都是**立即生效且只影响之后的对话**，历史记录一个字都不动。
+
+## 安装 / Install
+
+**✅ 推荐 / Recommended —— 从 npm 安装（用包名，不要手抄 tarball 地址）：**
+
+```bash
+dsh plugin add dsh-agent-profiles
+```
+
+*装完按提示重启 DSH；客户端那一半刷新页面即可生效。*
+*Restart DSH when prompted; reload the page for the client half.*
+
+### 备选方式 / Alternatives
+
+**① tarball —— 直接装打包文件 / install the packed tarball**
+
+```bash
+dsh plugin add https://registry.npmjs.org/dsh-agent-profiles/-/dsh-agent-profiles-0.7.0.tgz
+```
+
+**② 源码 —— clone 后把本地目录链接进 profile / from source: clone and link the folder**
+
+```bash
+git clone https://github.com/MoYu-CN/dsh-agent-profiles.git
+dsh plugin add "link:<你的目录>/dsh-agent-profiles"
+```
+
+`link:` 不拷贝、直接软链，改代码立刻生效 —— 适合要改插件本身的场景。
+`link:` symlinks instead of copying, so local edits take effect immediately — use it when you want to modify the plugin itself.
 
 ## 界面
 
